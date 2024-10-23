@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 35</title>
+</head>
+<body>
+    <h1>Pet's Slideshow</h1>
+    <div class="container">
+        <img src="./images/cat-dog2.avif" alt="" class="slide" id="slide">
+
+        <img src="./images/previous.png" alt="" class="action pre" onclick="previous()">
+        <img src="./images/next.png" alt="" class="action next" onclick="next()">
+    </div>
+
+    <script>
+        const images = ["./images/cat-dog2.avif", "./images/cat-dog1.jpg", "./images/cat-dog3.jpg", "./images/cat-dog4.webp", "./images/cat1.jpg", "./images/cat2.jpg", "./images/cat3.webp", "./images/dog1.webp","./images/dog2.jpg", "./images/dog3.jpg"]
+
+        let index = 0;
+        const slide = document.getElementById("slide");
+
+        function next(){
+            if(index < images.length-1){
+                index++;
+            }
+            else{
+                index=0;
+            }
+            slide.src = images[index];
+        }
+    </script>
+</body>
+</html>
