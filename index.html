@@ -27,6 +27,31 @@
             justify-content: center;
             align-items: center;
         }
+        .slide{
+            width: 90%;
+            height: 600px;
+            object-fit: cover;
+        }
+        .action{
+            position: absolute;
+            height: 40px;
+            cursor: pointer;
+            transition: .5s;
+        }
+        .pre{
+            left: 80px;
+            top: 45%;
+        }
+        .pre:hover{
+            transform: scale(0.8) translateX(-10px);
+        }
+        .next{
+            right: 80px;
+            top: 45%;
+        }
+        .next:hover{
+            transform: scale(0.8) translateX(10px);
+        }
     </style>
 </head>
 <body>
